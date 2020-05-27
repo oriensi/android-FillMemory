@@ -1,0 +1,21 @@
+cc_library_shared {
+    name: "libjni_fillmemory",
+
+    srcs: [
+        "jni_init.cpp",
+        "com_oriensi_fillmemory_Util.cpp",
+    ],
+
+    shared_libs: [
+        "libandroid_runtime",
+        "liblog",
+        "libnativehelper",
+        "libutils",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-Wno-unused-parameter",
+    ],
+}
